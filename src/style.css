@@ -1,17 +1,20 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
+    rgba(111, 78, 55, 0.582),
+    rgba(166, 123, 91, 0.904)
   );
 
   --image-gradient: linear-gradient(
-    to bottom left,
-    rgba(247, 0, 0, 0.678),
-    rgba(12, 10, 22, 0.863)
+    to top right,
+    rgba(166, 123, 91, 0.363),
+    rgba(111, 78, 55, 0.178)
   );
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: #fed8b1;
+}
+.App {
+  background-image: var(--image-gradient);
 }
 
 .purple {
@@ -57,28 +60,27 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #a67b5b;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: rgba(236, 177, 118, 0.959);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: rgba(254, 216, 177, 0.911);
   border-radius: 12px;
 }
-
 /* --------- */
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: #6f4e379a !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  box-shadow: 0px 10px 10px 0px rgba(111, 78, 55, 0.171) !important;
   backdrop-filter: blur(15px) !important;
 }
 
@@ -97,7 +99,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: #ecb176 !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -193,7 +195,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #ecb176;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -256,12 +258,11 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/asfalt-light.png);
+  /* background-image: var(--image-gradient); */
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
-  background-color: #cc8335;
 }
 
 .home-content {
@@ -281,17 +282,17 @@ button:focus {
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: #ecb176;
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: #ecb176 !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: #ecb176 !important;
 }
 
 @media (max-width: 767px) {
@@ -371,7 +372,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
+  background: #fed8b1;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -379,13 +380,13 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  box-shadow: 0 0 15px #fed8b1;
 }
 
 .home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  color: white;
+  box-shadow: 0 0 5px #fed8b1;
+  text-shadow: 0 0 2px #6f4e37;
 }
 
 .social-icons {
@@ -395,14 +396,17 @@ button:focus {
 }
 
 .icon-colour {
-  color: #700c86 !important;
+  color: #6f4e37 !important;
 }
 
 /* --------- */
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background: linear-gradient(to bottom right, #3e2c345e, #a67b5b5e, #fed8b15e);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  /* background-color: #6f4e37; */
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -428,7 +432,7 @@ button:focus {
 
 .footer h3 {
   font-size: 1em;
-  color: white !important;
+  color: #fed8b1 !important;
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
@@ -439,8 +443,21 @@ button:focus {
 }
 
 .blockquote-footer {
-  color: #a588c0 !important;
+  color: #fed8b1 !important;
 }
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /* --------- */
 /* Projects */
 /* --------- */
