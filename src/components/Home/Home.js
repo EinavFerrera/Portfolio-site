@@ -1,21 +1,23 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
+import homeLogo from "../../Assets/astronaut.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import Skill from "./Skill";
 
 function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
         <Particle />
-        <Container className="home-content">
+        <Container className="home-content z-ind">
           <Row>
+            <Skill />
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
+                <span className="wave " role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
@@ -34,14 +36,14 @@ function Home() {
               <img
                 src={homeLogo}
                 alt="home pic"
-                className="img-fluid"
+                className="img-fluid flip"
                 style={{ maxHeight: "450px" }}
               />
             </Col>
           </Row>
         </Container>
       </Container>
-      <Home2 />
+      <Home2 className="z-ind" />
     </section>
   );
 }
