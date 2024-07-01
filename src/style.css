@@ -7,13 +7,29 @@ html {
 
   --image-gradient: linear-gradient(
     to top right,
-    rgba(166, 123, 91, 0.363),
-    rgba(111, 78, 55, 0.178)
+    rgba(166, 123, 91, 0.663),
+    rgba(111, 78, 55, 0.478)
   );
 
   --imp-text-color: #fed8b1;
 }
-.App {
+.z-ind {
+  position: relative;
+}
+
+.flip {
+  transform: scaleX(-1);
+}
+.skillCont {
+  flex: 1;
+  gap: 20;
+  background-color: "#fff";
+  align-items: "center";
+  justify-content: "center";
+  flex-direction: "column";
+}
+
+canvas {
   background-image: var(--image-gradient);
 }
 
@@ -309,6 +325,7 @@ button:focus {
 .myAvtar {
   justify-content: center !important;
   padding-top: 9em !important;
+  z-index: 2;
 }
 
 @media (max-width: 767px) {
