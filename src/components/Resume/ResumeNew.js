@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
@@ -6,12 +6,6 @@ import { AiOutlineDownload } from "react-icons/ai";
 import CVpdf from "../../Assets/Einav_Ferrera_CV.pdf";
 
 function ResumeNew() {
-  const [width, setWidth] = useState(1200);
-
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, []);
-
   return (
     <div>
       <Container fluid className="resume-section">
@@ -31,7 +25,12 @@ function ResumeNew() {
         </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <a href={CVpdf} download="Einav Ferrera CV" target="_blank">
+          <a
+            href={CVpdf}
+            download="Einav Ferrera CV"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button
               variant="primary"
               style={{ marginTop: "0.5rem", maxWidth: "250px" }}
