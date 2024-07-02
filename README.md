@@ -1,5 +1,5 @@
 <h2 align="center">
-  Portfolio Website - v2.0<br/>
+  Portfolio Website<br/>
   <a href="https://einavferrera-portfolio.web.app/" target="_blank">einavferrera.web</a>
 </h2>
 <div align="center">
