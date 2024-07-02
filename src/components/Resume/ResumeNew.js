@@ -8,7 +8,7 @@ import CVpdf from "../../Assets/Einav_Ferrera_CV.pdf";
 function ResumeNew() {
   return (
     <div>
-      <Container fluid className="resume-section">
+      <Container fluid className="resume-section z-ind">
         <Particle />
 
         <Row>
