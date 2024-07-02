@@ -3,7 +3,7 @@
   <a href="https://einavferrera-portfolio.web.app/" target="_blank">einavferrera.web</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./Images/readme-img.png" />
+  <img alt="Demo" src="./Images/readme-img-mockup.png" />
 </div>
 
 <br/>
