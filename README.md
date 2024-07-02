@@ -13,8 +13,9 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
 [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
-//![GitHub Repo stars]
-//![GitHub forks]
+![GitHub Repo stars](https://img.shields.io/github/stars/EinavFerrera/Portfolio-site?color=red&logo=github&style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/EinavFerrera/Portfolio-site?color=red&logo=github&style=for-the-badge)
+
 
 </center>
 
