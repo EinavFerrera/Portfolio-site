@@ -4,7 +4,6 @@ import homeLogo from "../../Assets/astronaut.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import Skill from "./Skill";
 
 function Home() {
   return (
@@ -13,7 +12,6 @@ function Home() {
         <Particle />
         <Container className="home-content z-ind">
           <Row>
-            <Skill />
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There!{" "}
@@ -43,6 +41,7 @@ function Home() {
           </Row>
         </Container>
       </Container>
+
       <Home2 className="z-ind" />
     </section>
   );

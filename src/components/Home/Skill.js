@@ -1,35 +1,23 @@
-import { StyleSheet, View } from "react-native";
-import { useEffect, useRef } from "react";
-import { Player } from "@lordicon/react";
+import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode, faRocket, faRainbow } from "@fortawesome/free-solid-svg-icons";
 
-const ICON = require("./lock.json");
-
-export default function Skill() {
-  const playerRef = useRef(null);
-
-  useEffect(() => {
-    playerRef.current?.playFromBeginning();
-  }, []);
+export default function Skill(props) {
+  let arr = [faCode, faRocket, faRainbow];
+  let index = ["code", "auto", "dream"];
 
   return (
-    <View style={styles.container}>
-      <Player
-        ref={playerRef}
-        size={96}
-        icon={ICON}
-        onComplete={() => playerRef.current?.playFromBeginning()}
+    <div>
+      <FontAwesomeIcon
+        className="skill-icon"
+        icon={arr[index.indexOf(props.type)]}
+        bounce={
+          props.hover.id == index.indexOf(props.type)
+            ? props.hover.hovering
+            : false
+        }
       />
-    </View>
+      <h1 style={{ fontSize: "3rem", textAlign: "center" }}>{props.titel}</h1>
+    </div>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    gap: 20,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-    flexDirection: "column",
-  },
-});
