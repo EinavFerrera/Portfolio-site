@@ -10,6 +10,7 @@ import {
   DiGit,
   DiJava,
 } from "react-icons/di";
+import { RiFirebaseFill } from "react-icons/ri";
 import { SiPostgresql, SiArduino } from "react-icons/si";
 import Motoko from "../../Assets/Motoko.png";
 
@@ -33,6 +34,9 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <RiFirebaseFill />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiArduino />
