@@ -163,7 +163,7 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: #6f4e379a !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -471,10 +471,6 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background: linear-gradient(to bottom right, #3e2c345e, #a67b5b5e, #fed8b15e);
-  background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
-  /* background-color: #6f4e37; */
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -514,17 +510,6 @@ button:focus {
   color: #fed8b1 !important;
 }
 
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 .App {
   display: flex;
   flex-direction: column;
@@ -569,7 +554,7 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  box-shadow: 0 4px 5px 3px #fcc68f !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -579,7 +564,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 4px 5px #f6d1ab !important;
 }
 
 .blog-card {
@@ -590,27 +575,8 @@ button:focus {
   height: auto !important;
 }
 
-.blog-card-view {
-  background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
-  color: white !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
-}
-
-.blog-link {
-  color: white !important;
-  text-decoration: none !important;
-}
-
 .blog-link:hover {
   cursor: pointer !important;
-}
-
-.blog-card-view:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
 }
 
 .card-img-top {
@@ -627,14 +593,14 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  background-color: #9c7146 !important;
+  border-color: #9c7146 !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  background-color: #c48a50 !important;
+  border-color: #c48a50 !important;
 }
 .btn:focus {
   outline: none !important;
