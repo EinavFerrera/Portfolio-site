@@ -15,7 +15,7 @@ function SkillSet() {
         >
           <Skill type="code" titel="" hover={hover} />
           <h1 className="skill-title">Developer</h1>
-          <p className>
+          <p>
             I'm an avid programmer, crafting elegant solutions. From algorithms
             to user-friendly apps, I love the creativity, logic and problem
             solving of coding.
@@ -28,7 +28,7 @@ function SkillSet() {
         >
           <Skill type="auto" titel="" hover={hover} />
           <h1 className="skill-title">Autonomus</h1>
-          <p className>
+          <p>
             Fearless learner, embracing challenges with determination. Quick
             learner who lives at the time of the owl, the time for swift
             learning prowl
@@ -41,7 +41,7 @@ function SkillSet() {
         >
           <Skill type="dream" titel="" hover={hover} />
           <h1 className="skill-title">Dreamer</h1>
-          <p className>
+          <p>
             Space, Blockchain, drones, and green-tech lover. Bridging technology
             with cosmos, DApps, and sustainability for a brighter future (in an
             era where even the NORAML future exceeds expectations)

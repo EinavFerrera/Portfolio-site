@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faRocket, faRainbow } from "@fortawesome/free-solid-svg-icons";
 
@@ -12,7 +12,7 @@ export default function Skill(props) {
         className="skill-icon"
         icon={arr[index.indexOf(props.type)]}
         bounce={
-          props.hover.id == index.indexOf(props.type)
+          props.hover.id === index.indexOf(props.type)
             ? props.hover.hovering
             : false
         }
