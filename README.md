@@ -16,7 +16,6 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/EinavFerrera/Portfolio-site?color=red&logo=github&style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/EinavFerrera/Portfolio-site?color=red&logo=github&style=for-the-badge)
 
-
 </center>
 
 <h3 align="center">
@@ -70,8 +69,6 @@ You will find all the components used and you can edit your information accordin
 
 Give a ⭐ if you like this website!
 
-
 ### Credit
 
 This site was forked and modified from <a href="https://github.com/soumyajit4419/Portfolio" target="_blank">soumyajit</a>
-
