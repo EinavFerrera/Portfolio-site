@@ -2,12 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import Dkeeper from "../../Assets/Projects/Dkeeper.png";
+import Kosem from "../../Assets/Projects/Kosem.png";
+import MapMyJourney from "../../Assets/Projects/MapMyJourney.png";
+import MushRoom from "../../Assets/Projects/MushRoom.png";
 
 function Projects() {
   return (
@@ -28,70 +26,43 @@ function Projects() {
         >
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={MapMyJourney}
               isBlog={false}
-              title="World Achivment Mapper"
-              description="Familiy and friends interactive map to track and publis the progress in the mission to `catch them all`. Build with react.js, and Postgres and Server RESTful API."
-              // UPDATE
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Map My Journey"
+              description="Familiy and friends interactive map to track and publis the progress in the mission to `catch them all`. Build with react.js, Postgres and Server RESTful API."
+              ghLink="https://github.com/EinavFerrera/MapMyJourney.git"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={Kosem}
               isBlog={false}
               title="KOSEM"
               description="Web app to efficiently solve shift assignment problems encompassing over 2^1000 possible states. Implemented highly complex data structures and Network Optimization algorithm to achieve optimal shift assignments. Build with JS and MongoDB."
-              // UPDATE
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              ghLink="https://github.com/EinavFerrera/Kosem.git"
+              demoLink="https://einavferrera.github.io/EinavFerrera/pages/Kosem.html"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={Dkeeper}
               isBlog={false}
               title="D-Keeper"
               description="Powerd with ICP Blockchain Web3, D-Kepper is decentralized application (DApp) inspired by Google Notes. Built using React.js and Motoko, it offers secure and decentralized note-keeping on the blockchain. Experience the future of note-taking with D-Keeper's innovative and secure approach."
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"
+              ghLink="https://github.com/EinavFerrera/DKeeper.git"
+              demoLink="https://codesandbox.io/s/using-pre-built-react-components-completed-58bxk?fontsize=14&hidenavigation=1&theme=dark&file=/src/index.js"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={MushRoom}
               isBlog={false}
               title="Mush-Room"
               description="Mushroom cultivation hub featuring advanced humidity and temperature control with an adaptive algorithm. Engineered using Arduino and powered by C programming, Mush-Room ensures optimal conditions for mushroom growth through precise environmental management."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here
+              ghLink="https://github.com/EinavFerrera/Mushroom-environment-control.git"
             />
           </Col>
         </Row>
